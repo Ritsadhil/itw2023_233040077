@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan 2 - Form + Tabel</title>
+  </head>
+  <body>
+    <table width="20%" border="1px" cellpadding="3" cellspacing="0">
+      <tr bgcolor="gray">
+        <td align="center" color="gray" colspan="4">
+          <b>INPUT DATA MAHASISWA</b>
+        </td>
+      </tr>
+      <tr>
+        <td width="1%">Username</td>
+        <td width="1%">:</td>
+        <td><input type="text" /></td>
+      </tr>
+      <tr>
+        <td>Password</td>
+        <td>:</td>
+        <td><input type="password" /></td>
+      </tr>
+      <tr>
+        <td>Fullname</td>
+        <td>:</td>
+        <td><input type="text" /></td>
+      </tr>
+      <tr>
+        <td>E-mail</td>
+        <td>:</td>
+        <td><input type="text" /></td>
+      </tr>
+      <tr>
+        <td>Agama</td>
+        <td>:</td>
+        <td>
+          <select>
+            <option name="agama" selected>--pilih agama--</option>
+            <option value="islam">islam</option>
+            <option value="kristen protestan">kristen protestan</option>
+            <option value="kristen katolik">kristen katolik</option>
+            <option value="hindu">hindu</option>
+            <option value="buddha">buddha</option>
+            <option value="khonghucu">khonghucu</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Jenis Kelamin</td>
+        <td>:</td>
+        <td>
+          <input type="radio" name="jeniskelamin" value="Lakilaki" />Laki-laki
+          <input type="radio" name="jeniskelamin" value="Perempuan" />Perempuan
+        </td>
+      </tr>
+      <tr>
+        <td>Hobi</td>
+        <td>:</td>
+        <td>
+          <input type="checkbox" name="Hobi" value="musik" />musik
+          <input type="checkbox" name="Hobi" value="Olahraga" />Olahraga
+          <input type="checkbox" name="Hobi" value="Gaming" />Gaming
+          <input type="checkbox" name="Hobi" value="Lainnya" />Lainnya
+        </td>
+      </tr>
+      <tr>
+        <td>Profil Singkat</td>
+        <td>:</td>
+        <td><textarea name="" id="" cols="50" rows="4"></textarea></td>
+      </tr>
+      <tr>
+        <td border="0"><input type="submit" name="input" value="input" /></td>
+      </tr>
+    </table>
+  </body>
+</html>
