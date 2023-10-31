@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    div {
+      width: 150px;
+      height: 150px;
+    }
+
+    .kotak1 {
+      background-color: indigo;
+      margin: 50px auto;
+      border-radius: 70px;
+    }
+    .kotak2 {
+      background-color: chartreuse;
+      margin: 50px auto;
+      /* box-shadow: <x-offset> <y-offset> <blur> [size] <color>; */
+      box-shadow: 10px 10px 0px gold, -10px -10px 10px magenta,
+        0 0 10px 30px black;
+      transition: 5s;
+    }
+
+    .kotak2:hover {
+      border-radius: 100%;
+      transform: rotate(90000deg);
+      scale: 1000%;
+    }
+  </style>
+  <body>
+    <div class="kotak1"></div>
+    <div class="kotak2">
+      <img src="img/download.jpg" alt="mamah" width="150px" />
+    </div>
+  </body>
+</html>
