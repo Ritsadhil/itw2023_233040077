@@ -9,26 +9,37 @@ body {
 }
 
 .jumbotron .container img {
-  display: inline;
+  display: inline-flex;
   position: relative;
   /* right: 100px; */
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
 }
 
 .container {
-  display: inline;
+  display: inline-block;
   color: white;
 }
 
 /* skill */
 .skills {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
   gap: 10px;
 }
 
+.skills h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skills h3 {
+  color: rgb(19, 19, 19);
+}
+
 .skill {
+  grid-column: 1 / 1;
   background-color: white;
   padding: 10px;
   text-align: center;
@@ -47,12 +58,13 @@ body {
 }
 
 .gallery li {
+  display: inline-block;
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  /* overflow: hidden; */
+  overflow: hidden;
   border: 5px solid #222;
-  float: left;
+  /* float: right; */
   margin-right: 20px;
   position: relative;
 }
